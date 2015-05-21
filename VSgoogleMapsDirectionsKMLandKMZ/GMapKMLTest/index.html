@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>KMZ/KML Loading Map</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="map-canvas"></div>
+    <div id="DivLocation">
+        <span id="SpanAddress">
+            Enter a Starting Address:
+        </span>&nbsp;&nbsp;
+        <input type="text" id="TBLocation" class="tbLong" />&nbsp;&nbsp;
+        <input type="button" id="BtnLocate" value="find" />
+        &nbsp;
+        <input type="button" id="BtnClear" value="clear" />&nbsp;&nbsp;&nbsp;&nbsp;
+        <span id="SpanCB"><input type="checkbox" id="CBkml" checked />&nbsp;<label id="LblKML" for="CBkml">show KML/KMZ</label></span>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="scripts/jquery-2.1.3.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+    <script type="text/javascript">
+        $.getScript("scripts/jquery-u/jquery.dialogextend.js");
+        $.getScript("scripts/scripts.js");
+    </script>
+</body>
+</html>
